@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="signature" onclick="goHome()" role="button" tabindex="0">
+      <span class="name">Michal Kucharczyk</span>
+      <span class="separator"> | </span>
+      <span class="subtitle">VFX compositor</span>
+    </div>
+    <nav class="nav-buttons">
+      <ul class="nav-list">
+        <li class="dropdown">
+          <a href="#" onclick="goHome(); return false;">ABOUT ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#" onclick="showAboutAndScroll('filmography'); return false;">VFX filmography</a></li>
+            <li><a href="#" onclick="showAboutAndScroll('other-roles'); return false;">Other roles</a></li>
+          </ul>
+        </li>
+        <li><a href="#" onclick="showSection('showreel'); return false;">SHOWREEL</a></li>
+        <li><a href="#" onclick="showSection('photography'); return false;">PHOTOGRAPHY</a></li>
+        <li class="dropdown">
+          <a href="#" onclick="return false;">CV ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="files/CV.pdf" target="_blank" download="CV">Download as PDF</a></li>
+          </ul>
+        </li>
+        <li><a href="#" onclick="showSection('contact'); return false;">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<!-- About Section -->
+<section id="about" class="content-section">
+  <div class="about-content custom-font">
+    <div class="about-layout">
+
+      <!-- Carousel on the left -->
+      <div class="carousel-container">
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track">
+             <img src="posters/treflik.jpeg"alt="Poster"/>
+              <img src="posters/azrael.jpg"alt="Poster"/>
+              <img src="posters/say.jpg"alt="Poster"/>
+              <img src="posters/supersiostry.jpg"alt="Poster"/>
+              <img src="posters/laroy.jpg"alt="Poster"/>
+              <img src="posters/soulcatcher.jpg"alt="Poster"/>
+              <img src="posters/livinglarge.jpg"alt="Poster"/>
+              <img src="posters/niecodz.jpg"alt="Poster"/>
+              <img src="posters/hadik.jpg"alt="Poster"/>
+              <img src="posters/royal.jpg"alt="Poster"/>
+              <img src="posters/crow.jpg"alt="Poster"/>
+
+              <img src="posters/treflik.jpeg"alt="Poster"/>
+              <img src="posters/azrael.jpg"alt="Poster"/>
+              <img src="posters/say.jpg"alt="Poster"/>
+              <img src="posters/supersiostry.jpg"alt="Poster"/>
+              <img src="posters/laroy.jpg"alt="Poster"/>
+              <img src="posters/soulcatcher.jpg"alt="Poster"/>
+              <img src="posters/livinglarge.jpg"alt="Poster"/>
+              <img src="posters/niecodz.jpg"alt="Poster"/>
+              <img src="posters/hadik.jpg"alt="Poster"/>
+              <img src="posters/royal.jpg"alt="Poster"/>
+              <img src="posters/crow.jpg"alt="Poster"/>
+        </div>
+        </div>
+        </div>
+
+      <!-- About text on the right -->
+      <div class="about-text">
+        <h2>About me</h2>
+        <p>After graduating from Film & Media Studies in 2017 I started working in digital film restoration as a restoration technician. 
+          That sparked an interest in image manipulation and playing with pixels. Around the turn of 2021/2022 I slowly transitioned 
+          into VFX compositing roles and started using Nuke. In June 2024 I moved to Australia and continued my VFX career there.
+      </div>
+    </div>
+
+    <!-- New Subsections -->
+      <div id="filmography" class="about-subsection">
+        <h3>Selected filmography</h3>
+        <div class="filmography-columns">
+          <ul>
+            <li><strong>2024</strong> — Reags - War | music video | <a href="https://youtu.be/Ddc-Wbr3SA0" target="_blank">YT</a></li>
+            <li><strong>2024</strong> — We Bury the Dead | <a href="https://www.imdb.com/title/tt29713093/" target="_blank">IMDB</a></li>
+            <li><strong>2024</strong> — Azrael | <a href="https://www.imdb.com/title/tt22173666/" target="_blank">IMDB</a></li>
+            <li><strong>2024</strong> — Say Nothing | <a href="https://www.imdb.com/title/tt31122777/" target="_blank">IMDB</a></li>
+            <li><strong>2024</strong> — Supersiostry | <a href="https://www.imdb.com/title/tt28975839/" target="_blank">IMDB</a></li>
+          </ul>
+          <ul>
+            <li><strong>2024</strong> — Living Large | <a href="https://www.imdb.com/title/tt27850647/" target="_blank">IMDB</a></li>
+            <li><strong>2024</strong> — The Crow | <a href="https://www.imdb.com/title/tt1340094/" target="_blank">IMDB</a></li>
+            <li><strong>2023</strong> — LaRoy, Texas | <a href="https://www.imdb.com/title/tt20102596/" target="_blank">IMDB</a></li>
+            <li><strong>2023</strong> — Hadik | <a href="https://www.imdb.com/title/tt15299406/" target="_blank">IMDB</a></li>
+          </ul>
+          <ul>
+            <li><strong>2023</strong> — Soulcatcher | <a href="https://www.imdb.com/title/tt28290233/" target="_blank">IMDB</a></li>
+            <li><strong>2023</strong> — Red, White & Royal Blue | <a href="https://www.imdb.com/title/tt10172266/" target="_blank">IMDB</a></li>
+            <li><strong>2022</strong> — Nie cudzoloz i nie kradnij | <a href="https://www.imdb.com/title/tt15688632/" target="_blank">IMDB</a></li>
+            <li><strong>2021</strong> — The Treflik Family | <a href="https://www.imdb.com/title/tt5920374/" target="_blank">IMDB</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+        <div id="other-roles" class="about-subsection">
+          <h3>Other Roles</h3>
+          <div class="other-roles-columns">
+            
+            <div class="role-column">
+              <h4>Digital Film Restoration</h4>
+              <p>I had the enormous privilege of working on the restoration of many Polish and international classics. Between 2017 and 2022, I took part in restoring nearly a hundred films, including:</p>
+              <ul class="resto-list">
+                <ul><strong>Europe</strong> — Themersons’ short experimental film made in 1931, considered lost until 2019.</ul>
+                <ul><strong>Picnic at Hanging Rock</strong> — dir. Peter Weir, 1975</ul>
+                <ul><strong>The Hourglass Sanatorium</strong> — dir. Wojciech Has, 1973</ul>
+                <ul><strong>Bolek i Lolek</strong> — Polish animated TV series, 1963–1986</ul>
+              </ul>
+            </div>
+
+            <div class="role-column">
+              <h4>On-Set Data Wrangling</h4>
+              <p> I was responsible for gathering data from set, QC, reporting and archiving to LTO. I'd also prepare and distribute dailies and apply primary color grading.</p>
+              <ul>
+                <ul><strong>2025</strong> — The Family Next Door | <a href="https://www.imdb.com/title/tt34712975/" target="_blank">IMDB</a></ul>
+                <ul><strong>2022</strong> — Barbarians | <a href="https://www.imdb.com/title/tt9184986/" target="_blank">IMDB</a></ul>
+                <ul><strong>2022</strong> — Die Wespe | <a href="https://www.imdb.com/title/tt16420886/" target="_blank">IMDB</a></ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+</section>
+
+
+  <!-- Showreel Section -->
+<section id="showreel" class="content-section hidden">
+  <div class="video-container">
+    <h2>Compositing Showreel</h2>
+    <p>In all shots presented here I was using Nuke as a primary compositing software.</p>
+    <iframe 
+      src="https://www.youtube.com/embed/dcL8SU1WrDI" 
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+  <!-- Photography Section -->
+<section id="photography" class="content-section hidden">
+  <div class="gallery-wrapper">
+    <h2>Photography</h2>
+    <p>I shoot on film with my faithful companion, Praktica MTL5</p>
+     <div class="photo-gallery">
+     <div class="photo-row">
+       <img src="photos/bw-1.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/bw-2.jpg" alt="Photo" onclick="openLightbox(this)" />
+     </div>
+     <div class="photo-row">
+       <img src="photos/arch-1.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/arch-2.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/arch-3.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/arch-4.jpg" alt="Photo" onclick="openLightbox(this)" />
+     </div>
+     <div class="photo-row">
+       <img src="photos/arch-rgb-1.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/arch-rgb-2.jpg" alt="Photo" onclick="openLightbox(this)" />
+     </div>
+     <div class="photo-row">
+       <img src="photos/ryb-1.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/ryb-2.jpg" alt="Photo" onclick="openLightbox(this)" />
+     </div>
+    <div class="photo-row">
+       <img src="photos/gos-1.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/gos-2.jpg" alt="Photo" onclick="openLightbox(this)" />
+     </div>
+     <div class="photo-row">
+       <img src="photos/kon-1.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/kon-2.jpg" alt="Photo" onclick="openLightbox(this)" />
+     </div>
+     <div class="photo-row">
+       <img src="photos/kilda-1.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/kilda-2.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/kilda-3.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/kilda-4.jpg" alt="Photo" onclick="openLightbox(this)" />
+     </div>
+     <div class="photo-row">
+       <img src="photos/las-1.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/las-2.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <img src="photos/las-3.jpg" alt="Photo" onclick="openLightbox(this)" />
+       <!-- Add more as needed -->
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Contact Section -->
+  <section id="contact" class="content-section hidden">
+    <div class="contact-flex">
+      <div class="contact-text">
+        <h2>Contact me</h2>
+        <p>
+          I'm available from August 2025 for full time or freelance work on site in Melbourne or remotely. 
+          Please get in touch if you want to hear more. I'm always interested in connecting with like-minded people.
+        </p>
+
+        <p>mickuc.film@gmail.com</p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/mickuc-film/" target="_blank" aria-label="LinkedIn">
+            <img src="icons/InBug-Black.png" alt="LinkedIn Icon" />
+          </a>
+          <a href="https://www.instagram.com/syableman_" target="_blank" aria-label="Instagram">
+            <img src="icons/Instagram_Glyph_Black.png" alt="Instagram Icon" />
+          </a>
+          <a href="https://www.imdb.com/name/nm10894221/bio/?ref_=ext_shr_lnk" target="_blank" aria-label="IMDB">
+            <img src="icons/IMDb_Logo_Alt_Square_White.png" alt="IMDB Icon" />
+          </a>
+        </div>
+      </div>
+      <div class="contact-gif">
+        <img src="files/me.gif" alt="GIF of Michal Kucharczyk" />
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showSection(sectionId, doScroll = true) {
+      document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.add('hidden');
+      });
+
+      const target = document.getElementById(sectionId);
+      if (target) {
+        target.classList.remove('hidden');
+        if (doScroll) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+    }
+
+    function showAboutAndScroll(targetId) {
+      showSection('about', false);
+      setTimeout(() => {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 50);
+    }
+
+    function goHome() {
+      showSection('about');
+    }
+  </script>
+  <script>
+    let galleryImages = [];
+    let currentIndex = 0;
+
+    function openLightbox(clickedImg) {
+      galleryImages = Array.from(document.querySelectorAll('.photo-gallery img'));
+      currentIndex = galleryImages.indexOf(clickedImg);
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      lightboxImg.src = clickedImg.src;
+      lightbox.style.display = "flex";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+
+    function showImage(index) {
+      if (index >= 0 && index < galleryImages.length) {
+        currentIndex = index;
+        document.getElementById("lightbox-img").src = galleryImages[currentIndex].src;
+      }
+    }
+
+    function nextImage(event) {
+      if (event) event.stopPropagation();
+      showImage((currentIndex + 1) % galleryImages.length);
+    }
+
+    function prevImage(event) {
+      if (event) event.stopPropagation();
+      showImage((currentIndex - 1 + galleryImages.length) % galleryImages.length);
+    }
+
+    document.addEventListener("keydown", function (e) {
+      const lightbox = document.getElementById("lightbox");
+      if (lightbox.style.display === "flex") {
+        if (e.key === "ArrowRight") nextImage();
+        else if (e.key === "ArrowLeft") prevImage();
+        else if (e.key === "Escape") closeLightbox();
+      }
+    });
+  </script>
+
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Full-size photo" />
+    <div id="lightbox-prev" class="lightbox-arrow" onclick="prevImage(event)">&#10094;</div>
+    <div id="lightbox-next" class="lightbox-arrow" onclick="nextImage(event)">&#10095;</div>
+  </div>
+</body>
+</html>
